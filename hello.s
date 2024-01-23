@@ -8,7 +8,7 @@ _start: # mark start point of the executable code
 	movl $1, %ebx # move linux stdout of 1 to ebx register
 	movl $main_hello_string, %ecx #move our string address to the ecx register
 	movl $14, %edx # load our string length including new line into edx register
-	int $0x80 # trigger system intterupt to write 
+	int $0x80 # trigger system interrupt to write 
 	movl $1, %eax # move linux exit 1 to eax register
 	xorl %ebx, %ebx # xor ebx register with itself to return 0
 	int $0x80 # trigger OS interrupt to exit
