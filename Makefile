@@ -1,6 +1,6 @@
 #edward ramos - asm makefile
-ASM = as
-LD = ld
+ASM = as # the assembler
+LD = ld # the object file linker with optional linker flags
 LDFLAGS = 
 hello: hello.o
 	$(LD) $(LDFLAGS) -o hello $^ 
