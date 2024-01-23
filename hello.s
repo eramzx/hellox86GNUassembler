@@ -11,4 +11,4 @@ _start: # mark start point of the executable code
 	int $0x80 # trigger system intterupt to write 
 	movl $1, %eax # move linux exit 1 to eax register
 	xorl %ebx, %ebx # xor ebx register with itself to return 0
-	int $0x80 # trigger OS interrupst to exit
+	int $0x80 # trigger OS interrupt to exit
